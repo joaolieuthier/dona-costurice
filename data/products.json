@@ -1,0 +1,102 @@
+[
+  {
+    "id": "kit-floral",
+    "name": "Kit Floral com Charme",
+    "category": "Necessaires",
+    "description": "Necessaire, saquinho e chaveirinho em estampa floral exclusiva.",
+    "price": null,
+    "image": "assets/images/products/kit-floral.png",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "almofada-amamentacao",
+    "name": "Almofada de Amamentação",
+    "category": "Linha baby",
+    "description": "Conforto que acolhe, com capa removível e tecido macio.",
+    "price": null,
+    "image": "assets/images/products/almofada-amamentacao.png",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "guardanapo-girassol",
+    "name": "Guardanapo Girassol",
+    "category": "Linha cozinha",
+    "description": "Guardanapo de tecido para uma mesa posta ainda mais encantadora.",
+    "price": null,
+    "image": "assets/images/products/guardanapo-girassol.png",
+    "featured": false,
+    "active": true
+  },
+  {
+    "id": "avental-infantil",
+    "name": "Avental Infantil",
+    "category": "Linha infantil",
+    "description": "Para pequenos chefs brincarem, aprenderem e criarem com muita cor.",
+    "price": null,
+    "image": "assets/images/products/avental-infantil.png",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "dupla-floral",
+    "name": "Dupla Floral",
+    "category": "Bolsas",
+    "description": "Bolsa térmica e nécessaire impermeáveis para acompanhar todos os dias.",
+    "price": null,
+    "image": "assets/images/products/dupla-floral.png",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "saquinho-multiuso",
+    "name": "Saquinho Multiuso",
+    "category": "Saquinhos",
+    "description": "Organiza presentes, malas e gavetas de um jeito prático e charmoso.",
+    "price": null,
+    "image": "assets/images/products/saquinho-multiuso.png",
+    "featured": false,
+    "active": true
+  },
+  {
+    "id": "mini-box",
+    "name": "Mini Box",
+    "category": "Necessaires",
+    "description": "Pequena no tamanho, gigante na praticidade. Ideal para o dia a dia.",
+    "price": null,
+    "image": "assets/images/products/mini-box.png",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "capa-biblia",
+    "name": "Capa de Bíblia",
+    "category": "Capas de Bíblia",
+    "description": "Proteção artesanal, delicada e cheia de significado para a Palavra.",
+    "price": null,
+    "image": "assets/images/products/capa-biblia.png",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "ninho-redutor",
+    "name": "Ninho Redutor de Berço",
+    "category": "Linha baby",
+    "description": "Conforto, proteção e aconchego para os primeiros momentos do bebê.",
+    "price": null,
+    "image": "assets/images/products/ninho-redutor.png",
+    "featured": false,
+    "active": true
+  },
+  {
+    "id": "porta-garrafa",
+    "name": "Porta-garrafa Térmico",
+    "category": "Térmicos",
+    "description": "Para manter geladinho ou quentinho, com alça e acabamento artesanal.",
+    "price": null,
+    "image": "assets/images/products/porta-garrafa.png",
+    "featured": false,
+    "active": true
+  }
+]
