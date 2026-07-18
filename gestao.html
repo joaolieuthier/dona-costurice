@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#b8674e"><title>Gestão do catálogo | Dona Costurice</title><link rel="icon" href="assets/images/brand/logo.jpg"><link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/gestao.js" defer></script></head>
+<body class="admin-page">
+  <header class="admin-header"><a class="brand" href="index.html"><img src="assets/images/brand/logo.jpg" alt=""><span><strong>Ateliê Digital</strong><small>gestão da loja</small></span></a><a href="index.html">Ver vitrine ↗</a></header>
+  <main class="admin-main">
+    <section class="admin-intro"><div><p class="eyebrow">Painel da Dona Costurice</p><h1>Produtos e novidades, <em>num só lugar.</em></h1><p>Edite o catálogo e prepare artes para o Instagram sem alterar o código do site.</p></div></section>
+    <div class="notice"><strong>Como funciona no GitHub Pages:</strong> as mudanças feitas nesta tela ficam apenas no navegador. Ao terminar, baixe o novo <code>products.json</code> e substitua o arquivo <code>data/products.json</code> no GitHub. As fotos devem ser enviadas para <code>assets/images/products</code>. O passo a passo completo está no README.</div>
+    <div class="admin-tabs"><button class="active" data-tab="catalogo">Catálogo</button><button data-tab="news">Gerar News</button></div>
+
+    <section class="admin-panel active" id="catalogo">
+      <div class="admin-grid">
+        <div class="admin-card"><p class="eyebrow">Nova peça</p><h2>Cadastrar produto</h2><form id="product-form">
+          <label>Nome<input name="name" required placeholder="Ex.: Necessaire Floral"></label>
+          <div class="field-row"><label>Categoria<input name="category" required placeholder="Necessaires"></label><label>Preço em reais (opcional)<input name="price" inputmode="decimal" placeholder="59,90"></label></div>
+          <label>Descrição<textarea name="description" rows="4" required placeholder="Materiais, benefícios e possibilidades de uso."></textarea></label>
+          <label>Nome do arquivo da foto<input name="image" required placeholder="necessaire-floral.jpg"><small>Use o mesmo nome ao enviar a foto para assets/images/products.</small></label>
+          <label class="checkbox"><input name="featured" type="checkbox"> Destacar na coleção</label>
+          <button class="button primary" type="submit">Adicionar ao catálogo</button>
+        </form></div>
+        <div class="admin-card"><div class="section-heading"><div><p class="eyebrow">Vitrine</p><h2>Produtos</h2></div></div><div class="admin-products" id="admin-products"></div><div class="admin-actions"><button id="download-json" type="button">Baixar products.json</button><label>Importar JSON<input id="import-json" type="file" accept="application/json"></label></div></div>
+      </div>
+    </section>
+
+    <section class="admin-panel" id="news">
+      <div class="news-layout">
+        <div class="admin-card"><p class="eyebrow">Conteúdo para redes sociais</p><h2>Gerar uma News</h2><p>Escolha o produto e a chamada. A arte será criada no formato 4:5 do feed.</p>
+          <label>Produto<select id="news-product"></select></label>
+          <label>Chamada da arte<input id="news-title" value="Chegou novidade por aqui!"></label>
+          <label>Tipo de publicação<select id="news-type"><option value="novidade">Lançamento / novidade</option><option value="presente">Sugestão de presente</option><option value="estoque">Últimas unidades</option><option value="bastidor">Bastidores do ateliê</option></select></label>
+          <button class="button primary" id="generate-news" type="button">Gerar arte e legenda</button>
+          <label>Legenda pronta<textarea id="news-caption" rows="12" placeholder="A legenda aparecerá aqui."></textarea></label>
+          <div class="admin-actions"><button id="copy-caption" type="button">Copiar legenda</button><button id="download-art" type="button">Baixar arte</button></div>
+        </div>
+        <div class="news-preview"><canvas id="news-canvas" width="1080" height="1350"></canvas><p>A arte será baixada em 1080 × 1350 px, formato recomendado para o feed.</p></div>
+      </div>
+    </section>
+  </main>
+  <div class="status" id="status" hidden></div>
+</body>
+</html>

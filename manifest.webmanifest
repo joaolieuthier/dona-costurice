@@ -1,0 +1,13 @@
+{
+  "name": "Dona Costurice — Catálogo",
+  "short_name": "Costurice",
+  "description": "Afeto em forma de costura.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#b8674e",
+  "icons": [
+    { "src": "assets/images/brand/logo.jpg", "sizes": "1080x1080", "type": "image/jpeg", "purpose": "any maskable" }
+  ]
+}
